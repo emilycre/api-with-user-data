@@ -1,0 +1,11 @@
+#header-container {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100px;
+}
+
+#logo {
+    width: 75px;
+    height: 75px;
+    margin: 10px;
+}
