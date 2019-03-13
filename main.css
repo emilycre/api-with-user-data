@@ -9,3 +9,8 @@
     height: 75px;
     margin: 10px;
 }
+
+#user-icon {
+    width: 65px;
+    border-radius: 100%;
+}
