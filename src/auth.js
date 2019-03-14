@@ -1,4 +1,7 @@
 import { auth } from './firebase.js';
+import loadHeader from './header-component.js';
+
+loadHeader();
 
 const ui = new firebaseui.auth.AuthUI(auth);
 

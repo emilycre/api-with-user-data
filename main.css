@@ -1,3 +1,7 @@
+header, main {
+    font-family: 'Thasadith', sans-serif;
+}
+
 #header-container {
     display: flex;
     flex-flow: row nowrap;
