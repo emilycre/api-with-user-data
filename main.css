@@ -1,11 +1,26 @@
-header, main {
+header {
     font-family: 'Thasadith', sans-serif;
+}
+
+main {
+    font-family: 'Poppins', sans-serif;
 }
 
 #header-container {
     display: flex;
     flex-flow: row nowrap;
+    justify-content: center;
     height: 100px;
+}
+
+#firebaseui-auth-container {
+    margin: 30px 0px 30px 0px;
+}
+
+p {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
 }
 
 #logo {
@@ -18,3 +33,6 @@ header, main {
     width: 65px;
     border-radius: 100%;
 }
+
+/* U+263C ☼ */
+/* U+2601 ☁ */

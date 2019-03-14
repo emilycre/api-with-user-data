@@ -16,10 +16,12 @@ export function makeHeader() {
 }
 
 export function makeProfile(user) {
+    const avatar = user.photoUrl || '../assets/user-icon.png';
+
     const html = /*html*/ `
     <div id="profile">
-        <span>Name: Louise</span>
-        <img id="user-icon" src="./assets/user-icon.png" alt="outline of a person with magnifying glass, and question mark">
+        <span>${user.displayName}</span>
+        <img id="user-icon" src="${avatar}" alt="user icon with magnifying glass, and question mark">
         <button>Sign Out</button>
     </div>
     `;
@@ -43,10 +45,14 @@ export default function loadHeader(options) {
     auth.onAuthStateChanged(user => {
         if(user) {
             const userDom = makeProfile(user);
+            const signOutButton = userDom.querySelector('button');
+            signOutButton.addEventListener('click', () => {
+                auth.signOut();
+            });
             header.appendChild(userDom);
         }
         else {
-            console.log('No user, redirect to auth.html...');
+            window.location = './auth.html';
         }
     });
 }
