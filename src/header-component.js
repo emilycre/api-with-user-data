@@ -20,7 +20,7 @@ export function makeProfile(user) {
 
     const html = /*html*/ `
     <div id="profile">
-        <span>${user.displayName}</span>
+        <span id="username">${user.displayName}</span>
         <img id="user-icon" src="${avatar}" alt="user icon with magnifying glass, and question mark">
         <button>Sign Out</button>
     </div>

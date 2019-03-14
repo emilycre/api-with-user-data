@@ -8,7 +8,7 @@
     <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase-auth.js"></script>
     <link rel="stylesheet" type="text/css" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins|Thasadith" rel="stylesheet">
-    <title>Log In Page</title>
+    <title>Weather Web App</title>
 </head>
 <body>
     <header>
@@ -16,7 +16,16 @@
 
         </div>
     </header>
-    <main></main>
+    <main>
+        <section>
+            <ul id="city-data">
+                <li>
+                    <p>City: London</p>
+                    <a href="https://api.openweathermap.org/data/2.5/weather?q=London"></a>
+                </li>
+            </ul>
+        </section>
+    </main>
     <footer></footer>
     <script type="module" src="src/index.js"></script>
 </body>

@@ -12,7 +12,7 @@ test('make profile with default avatar', assert => {
     
     const expected = /*html*/ `
     <div id="profile">
-        <span>Louise</span>
+        <span id="username">Louise</span>
         <img id="user-icon" src="../assets/user-icon.png" alt="user icon with magnifying glass, and question mark">
         <button>Sign Out</button>
     </div>
@@ -32,7 +32,7 @@ test('create profile template', assert => {
     
     const expected = /*html*/ `
     <div id="profile">
-        <span>Louise</span>
+        <span id="username">Louise</span>
         <img id="user-icon" src="./assets/user-icon.png" alt="user icon with magnifying glass, and question mark">
         <button>Sign Out</button>
     </div>
