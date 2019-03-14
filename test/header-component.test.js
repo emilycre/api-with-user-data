@@ -1,4 +1,5 @@
 import { makeHeader, makeProfile } from '../src/header-component.js';
+import './html-equal.js';
 
 const test = QUnit.test;
 QUnit.module('Create header test');

@@ -8,3 +8,4 @@ const url = 'https://api.openweathermap.org/data/2.5/weather?q=${query}&api_key=
 
 fetch(url)
     .then(res => res.json())
+    // .then(respons => )
