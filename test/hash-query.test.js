@@ -3,9 +3,6 @@ import writeSearchToQuery, { readFromQuery } from '../src/hash-query.js';
 const test = QUnit.test;
 QUnit.module('Hash query test');
 
-// const SEARCH_URL = 'https://api.openweathermap.org/data/2.5/weather';
-// const API_KEY = 'e631afcf2a6665bac805e9fc388a6389';
-
 test('read search from query', assert => {
     //arrange
     const q = 'q=Seattle&APPID=e631afcf2a6665bac805e9fc388a6389';
