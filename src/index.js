@@ -4,8 +4,10 @@ loadHeader();
 
 const query = encodeURIComponent('London');
 const API_KEY = 'e631afcf2a6665bac805e9fc388a6389';
-const url = 'https://api.openweathermap.org/data/2.5/weather?q=${query}&api_key=${API_KEY}';
+const url = `https://api.openweathermap.org/data/2.5/weather?q=${query}&APPID=${API_KEY}`;
 
 fetch(url)
     .then(res => res.json())
-    // .then(respons => )
+    .then(response => {
+        console.log(response)
+    })

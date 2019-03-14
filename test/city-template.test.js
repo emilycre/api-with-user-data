@@ -1,22 +1,8 @@
 import './html-equal.js';
+import createCityTemplate from '../src/create-city-template.js';
 
 const test = QUnit.test;
 QUnit.module('Create city template');
-
-function createCityTemplate(data) {
-    const html = /*html*/ `
-        <ul id="city-data">
-            <li>London</li>
-            <li>Weather description:</li>
-            <li>Temp. Minimum:</li>
-            <li>Temp. Maximum:</li>
-        </ul>
-    `;
-    
-    const template = document.createElement('template');
-    template.innerHTML = html;
-    return template.content;    
-}
 
 test('city template will match HTML', assert => {
     //arrange
@@ -38,11 +24,13 @@ test('city template will match HTML', assert => {
     const result = createCityTemplate(data);
     //assert
     assert.htmlEqual(result, /*html*/ `
-        <ul id="city-data">
-            <li>London</li>
-            <li>Weather description:</li>
-            <li>Temp. Minimum:</li>
-            <li>Temp. Maximum:</li>
-        </ul>
+        <section>
+            <ul id="city-data">
+                <li>London</li>
+                <li>Weather description:</li>
+                <li>Temp. Minimum:</li>
+                <li>Temp. Maximum:</li>
+            </ul>
+        </section>
     `);
 });
