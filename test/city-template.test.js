@@ -27,9 +27,9 @@ test('city template will match HTML', assert => {
         <section>
             <ul id="city-data">
                 <li>London</li>
-                <li>Weather description:</li>
-                <li>Temp. Minimum:</li>
-                <li>Temp. Maximum:</li>
+                <li>Description: Drizzle, light intensity drizzle.</li>
+                <li>Temp. Min.: 279.15</li>
+                <li>Temp. Max.: 281.15</li>
             </ul>
         </section>
     `);

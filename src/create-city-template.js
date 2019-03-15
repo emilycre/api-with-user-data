@@ -2,10 +2,10 @@ export default function createCityTemplate(data) {
     const html = /*html*/ `
     <section>
         <ul id="city-data">
-            <li>London</li>
-            <li>Weather description:</li>
-            <li>Temp. Minimum:</li>
-            <li>Temp. Maximum:</li>
+            <li>${data.name}</li>
+            <li>Description: ${data.weather[0].main}, ${data.weather[0].description}.</li>
+            <li>Temp. Min.: ${data.main.temp_min}</li>
+            <li>Temp. Max.: ${data.main.temp_max}</li>
         </ul>
     </section>
     `;
