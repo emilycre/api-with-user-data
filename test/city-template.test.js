@@ -24,10 +24,10 @@ test('city template will match HTML', assert => {
     const result = createCityTemplate(data);
     //assert
     assert.htmlEqual(result, /*html*/ `
-        <section>
-            <ul id="city-data">
+        <section id="city-data">
+            <ul id="city">
                 <li>London</li>
-                <li>Description: Drizzle, light intensity drizzle.</li>
+                <li>Description: light intensity drizzle.</li>
                 <li>Temp. Min.: 279.15</li>
                 <li>Temp. Max.: 281.15</li>
             </ul>
