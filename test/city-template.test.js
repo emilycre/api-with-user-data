@@ -30,6 +30,7 @@ test('city template will match HTML', assert => {
                 <li>Description: light intensity drizzle.</li>
                 <li>Temp. Min.: 279.15</li>
                 <li>Temp. Max.: 281.15</li>
+                <button class="favorite">Favorite</button>
             </ul>
         </section>
     `);

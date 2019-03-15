@@ -6,6 +6,7 @@ export default function createCityTemplate(data) {
             <li>Description: ${data.weather[0].description}.</li>
             <li>Temp. Min.: ${data.main.temp_min}</li>
             <li>Temp. Max.: ${data.main.temp_max}</li>
+            <button class="favorite">Favorite</button>
         </ul>
     </section>
     `;
